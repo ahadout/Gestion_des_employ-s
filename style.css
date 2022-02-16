@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    background-color: rgb(0, 140, 255);
+}
+header h1{
+    padding: 25px;
+    text-align: center;
+    color: white;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr); */
+    min-height: 100vh;
+    background-image: url("servers.jpg");
+    background-size: cover;
+}
+.section1{
+    /* grid-column: 4/10;
+    grid-row: 2/5; */
+    background-color: rgb(0, 110, 253);
+    border: none;
+    border-radius: 15px;
+    min-height: 50vh;
+    width: 50%;
+    margin: 45px 25% 30px 25%;
+}
+.section1 h1{
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+.deleteContainer{
+    padding: 10px;
+    margin: 35px 20% 30px 20%;
+    border: 1px solid black;
+}
+.section1 h4{
+    color: rgb(148, 21, 21);
+    text-align: center;
+}
+.section1 p{
+    margin-top: 15px;
+    color: white;
+    text-align: center;
+}
+#search{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    margin-bottom: 15px;
+}
+#search button{
+    grid-column: 2/3;
+    width: 50%;
+    justify-self: center;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+}
+#search button:hover{
+    background-color: rgb(0, 119, 255);
+    cursor: pointer;
+}
+#search button a{
+    text-decoration: none;
+    color: white;
+    
+}
+.section1 .form{
+    margin-top: 35px;
+    justify-self: center;
+    align-self: center;
+}
+.section1 .form div{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    margin-bottom: 15px;
+}
+.form div label{
+    grid-column: 1/2;
+    margin-left: 15px;
+    color: white;
+}
+.form div input{
+    grid-column: 2/3;
+    border-radius: 4px;
+    border: none;
+    padding: 5px;
+    width: 70%;
+    justify-self: center;
+}
+.form div select{
+    border-radius: 4px;
+    padding: 2px;
+    width: 25%;
+}
+#searchInput{
+    grid-column: 2/3;
+    border-radius: 4px;
+    border: none;
+    padding: 5px;
+    width: 35%;
+    justify-self: start;
+}
+.submit{
+    grid-column: 2/3;
+    width: 50%;
+    justify-self: center;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: green;
+}
+.submit:hover{
+    background-color: greenyellow;
+    color: black;
+    cursor: pointer;
+}
+.cancel{
+    grid-column: 2/3;
+    width: 50%;
+    justify-self: center;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(179, 116, 0);
+}
+.cancel:hover{
+    background-color: rgb(104, 29, 6);
+    cursor: pointer;
+}
+.section2{
+    width: 70%;
+    margin: 30px 15% 30px 15%;
+    /* grid-column: 3/11;
+    grid-row: 10/13; */
+}
+.table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.table tr th{
+    background-color: rgb(0, 110, 253);
+    color: white;
+}
+.table tr td{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.table tr th, td{
+    padding: 4px;
+    text-align: left;
+    border: 1px solid grey;
+}
+.modify{
+    border: none;
+    background: none;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+.modify:hover{
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+.delete{
+    border: none;
+    background: none;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+.delete:hover{
+    cursor: pointer;
+    color: red;
+    text-decoration: underline;
+}
